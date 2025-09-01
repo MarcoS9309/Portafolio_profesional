@@ -187,7 +187,7 @@ function copyEmail() {
 // Agregar botón de "volver arriba"
 function createBackToTopButton() {
     const button = document.createElement('button');
-    button.innerHTML = '<i class="fas fa-chevron-up"></i>';
+    button.innerHTML = '<span class="icon-chevron-up"></span>';
     button.className = 'back-to-top';
     button.style.cssText = `
         position: fixed;
