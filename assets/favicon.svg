@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Fondo con gradiente vintage -->
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5a3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d4af37;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Fondo circular -->
+  <circle cx="32" cy="32" r="30" fill="url(#bg)"/>
+  
+  <!-- Letras MV estilizadas -->
+  <text x="32" y="42" font-family="serif" font-size="28" font-weight="bold" 
+        fill="#faf8f3" text-anchor="middle">MV</text>
+  
+  <!-- Borde sutil -->
+  <circle cx="32" cy="32" r="30" fill="none" stroke="#6d4428" stroke-width="2"/>
+</svg>
