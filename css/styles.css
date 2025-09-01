@@ -33,8 +33,8 @@
     --shadow-lg: 0 8px 16px -4px rgba(139, 90, 60, 0.2), 0 4px 6px -4px rgba(139, 90, 60, 0.1);
     --shadow-xl: 0 16px 32px -8px rgba(139, 90, 60, 0.25), 0 8px 12px -6px rgba(139, 90, 60, 0.15);
     
-    /* Tipografía */
-    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    /* Tipografía con fallbacks mejorados */
+    --font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
     --font-size-xs: 0.75rem;
     --font-size-sm: 0.875rem;
     --font-size-base: 1rem;
@@ -451,6 +451,41 @@ body {
     font-size: var(--font-size-2xl);
 }
 
+/* Icon system enhancements */
+[class*="icon-"] {
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+
+.skill-category [class*="icon-"] {
+    color: var(--primary-color);
+    font-size: var(--font-size-2xl);
+    margin-right: var(--spacing-sm);
+}
+
+.contact-item [class*="icon-"] {
+    color: var(--primary-color);
+    font-size: var(--font-size-lg);
+    width: 20px;
+    text-align: center;
+}
+
+.social-link [class*="icon-"] {
+    font-size: var(--font-size-lg);
+}
+
+.project-placeholder [class*="icon-"] {
+    font-size: var(--font-size-3xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.project-link [class*="icon-"] {
+    margin-right: var(--spacing-xs);
+}
+
 .skill-list {
     display: flex;
     flex-wrap: wrap;
@@ -691,6 +726,7 @@ body {
         box-shadow: var(--shadow-lg);
         padding: var(--spacing-xl) 0;
         border-top: 1px solid rgba(139, 90, 60, 0.2);
+        z-index: 999;
     }
     
     .nav-menu.active {
